@@ -62,14 +62,32 @@ class _MyHomePageState extends State<MyHomePage> {
               margin: const EdgeInsets.only(top: 20, bottom: 5),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
-                color: const Color.fromARGB(255, 78, 240, 86),
-
+                color: const Color.fromARGB(255, 187, 209, 243),
               ),
               child: const Text(
                 "Mencoba",
-                style: TextStyle(fontSize: 20, color: Colors.white),
+                style: TextStyle(fontSize: 20, color: Color.fromARGB(255, 9, 9, 9)),
               ),
-            )
+            ),
+          const SizedBox(height: 40,),
+              ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(255, 17, 156, 22),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                    ),
+                    onPressed: () {
+                      print("click");
+                    },
+                    child: const Text(
+                      "Tombol",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
           ],
         ),
       ),
